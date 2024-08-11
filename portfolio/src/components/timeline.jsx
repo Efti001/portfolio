@@ -1,32 +1,51 @@
-import React from 'react';
-import timelineData from '../data/timelineData';
-
-export default function Timeline() {
+export default function WorkingProcess() {
     return (
-        <div className="p-10 flex flex-col justify-center items-center text-center">
-            <h1 className="text-2xl font-bold text-center p-5">Education Timeline</h1>
-            <div className="relative flex border-t-2 border-gray-300">
-                {timelineData.map((item, index) => (
-                    <div
-                        key={index}
-                        className="relative flex flex-col justify-center items-center mx-10 w-64 h-64 text-white bg-cover bg-center rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
-                        style={{ backgroundImage: `url(${item.image})` }}
-                    >
-                        <div className="bg-black bg-opacity-50 p-4 rounded-lg hover:bg-opacity-75 transition duration-300">
-                            <p className="text-sm font-semibold">{item.year}</p>
-                            <h2 className="text-lg font-bold">{item.institution}</h2>
-                            <p className="text-xs">{item.degree}</p>
-                        </div>
-                        <a
-                            href={item.website}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="absolute inset-0"
-                            aria-label={`Visit ${item.institution}'s website`}
-                        ></a>
+        <section>
+            <div className="bg-black text-white py-8">
+                <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
+                    <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
+                        <p className="ml-2 text-yellow-300 uppercase tracking-loose font-bold">Education</p>
                     </div>
-                ))}
+                    <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
+                        <div className="container mx-auto w-full h-full">
+                            <div className="relative wrap overflow-hidden p-10 h-full">
+                                <div className="border-2-2 border-yellow-555 absolute h-full border"
+                                     style={{ right: '50%', border: '2px solid #FFC100', borderRadius: '1%' }}></div>
+                                <div className="border-2-2 border-yellow-555 absolute h-full border"
+                                     style={{ left: '50%', border: '1px solid #FFC100', borderRadius: '1%' }}></div>
+
+                                <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                                    <div className="order-1 w-5/12"></div>
+                                    <div className="order-1 w-5/12 px-1 py-4 text-right">
+                                        <p className="mb-3 text-base text-yellow-300">2021 - 2024</p>
+                                        <h4 className="mb-3 font-bold text-lg md:text-2xl">University of Central Florida</h4>
+                                        <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 font-semibold">Bachelors of Science, Information Technology</p>
+                                    </div>
+                                </div>
+
+                                <div className="mb-8 flex justify-between items-center w-full right-timeline">
+                                    <div className="order-1 w-5/12"></div>
+                                    <div className="order-1 w-5/12 px-1 py-4 text-left">
+                                    <p className="mb-3 text-base text-yellow-300">2019 - 2021</p>
+                                        <h4 className="mb-3 font-bold text-lg md:text-2xl">Palm Beach State College</h4>
+                                        <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 font-semibold">Associates in Arts</p>
+                                    </div>
+                                </div>
+
+                                <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                                    <div className="order-1 w-5/12"></div>
+                                    <div className="order-1 w-5/12 px-1 py-4 text-right">
+                                    <p className="mb-3 text-base text-yellow-300">2015 - 2019</p>
+                                        <h4 className="mb-3 font-bold text-lg md:text-2xl">Palm Beach Lakes High</h4>
+                                        <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100 font-semibold">High School Diploma</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     );
 }

@@ -10,10 +10,11 @@ export default function Projects() {
                         key={project.id}
                         className="bg-white p-5 text-center border-4 border-black rounded-xl"
                     >
-                        <img src={project.image} alt={project.title} className="mb-4 w-full h-32 object-cover rounded-t-xl" />
                         <h1 className="text-lg font-bold">{project.title}</h1>
-                        <p className="text-md font-semibold">{project.stacks.join(', ')}</p>
-                        <p className="text-md font-bold">{project.description}</p>
+                        <p className="text-md font-semibold border border-dotted border-gray-500 inline-block px-2 py-1 rounded">
+                            {project.stacks.join(', ')}
+                        </p>
+                        <p className="text-md font-bold mt-2">{project.description}</p>
                     </div>
                 ))}
             </div>
