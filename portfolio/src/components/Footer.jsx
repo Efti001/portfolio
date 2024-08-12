@@ -19,7 +19,7 @@ export default function Footer() {
 
                 {/* LinkedIn Link */}
                 <a
-                    href="https://www.linkedin.com/in/morshed-ahmed/"
+                    href="https://www.linkedin.com/in/efti/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
