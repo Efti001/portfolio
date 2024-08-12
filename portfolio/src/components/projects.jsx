@@ -3,7 +3,7 @@ import projectData from '../data/projectdata';
 
 export default function Projects() {
     return (
-        <div className="p-10 flex justify-center my-10 mx-96">
+        <div id ="project" className="p-10 flex justify-center my-10 mx-96">
             <div className="grid grid-cols-3 gap-10">
                 {projectData.map((project) => (
                     <div

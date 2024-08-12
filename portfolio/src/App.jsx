@@ -22,7 +22,7 @@ export default function App() {
         <Projects />
         <Footer />
     </div>
-    <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-black text-white">
+    <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-black text-white pt-10">
         <Timeline />
         <Footer />
     </div>
