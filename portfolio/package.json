@@ -1,9 +1,9 @@
 {
-  "name": "my-react-app",
-  "private": true,
-  "homepage": "https://efti001.github.io/me",
+  "name": "portfolio",
   "version": "0.0.0",
+  "private": true,
   "type": "module",
+  "homepage": "https://efti001.github.io/portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
