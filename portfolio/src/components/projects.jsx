@@ -8,7 +8,7 @@ export default function Projects() {
                 {projectData.map((project) => (
                     <div
                         key={project.id}
-                        className="bg-white p-5 text-center border-4 border-black rounded-xl"
+                        className="bg-black text-white p-5 text-center border-4 border-white rounded-xl"
                     >
                         <h1 className="text-lg font-bold">{project.title}</h1>
                         <p className="text-md font-semibold border border-dotted border-gray-500 inline-block px-2 py-1 rounded">
